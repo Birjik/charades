@@ -1,0 +1,359 @@
+body{
+	background:#fff;
+	padding:0;
+	margin:0;
+}
+#header h1 a{
+	font-size:250%;
+	color:rgb(34,177,76);
+	font-family:Verdana;
+	margin:0;
+}
+a {
+	color:blue;
+	text-decoration:none;
+}
+#all{
+	margin:0px 10px;
+	border-bottom:1px #0f0f07 solid;
+	min-height:94%;
+}
+#header{
+	text-align:center;
+}
+#footer{
+	position:relative;
+	font-family:"Comic Sans MS";
+	text-align:center;
+	margin:5px 0px;
+}
+#content{
+	padding:10px;
+	min-height:70.5%;
+}
+p{
+	background:#efe;
+	padding:10px;
+}
+#button{
+    padding:10px;
+    width:22%;
+    border:2px solid;
+    border-radius:20;
+	text-align:center;
+	font-size:150%;
+	color:white;
+	background:#8f8;
+	margin-left:38%;
+	margin-bottom:1%;
+}
+#button:hover{
+    padding:10px;
+    border:2px solid;
+	border-color:#22cc22;
+	text-align:center;
+	font-size:150%;
+	background:#fff;
+	color:#22cc22;
+}
+.round{
+	font-size:150%;
+	font-family:"Times new roman";
+	color:#55f;
+}
+#word input{
+	height:50px;
+	width:100%;
+	font-size:250%;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-bottom:2px #aaa solid;
+	text-align:center;
+}
+#word{
+	margin:2.5% 25% 5% 25%;
+}
+.num{
+	float:left;
+	font-size:37px;
+	font-family:Verdana;
+}
+#add_word{
+	text-align:center;
+}
+#add_word input{
+	padding:10px;
+	height:50px;
+    min-width:150px;
+	font-size:125%;
+	color:white;
+	background:#8f8;
+}
+#count{
+    font-size:150%;
+	text-align:center;
+	margin:50px 0px 50px 0px;
+}
+form{
+	padding:0px;
+	margin:0px;
+}
+.word2{
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-bottom:2px #aaa solid;
+	height:75px;
+	width:300px;
+	font-size:255%;
+	font-family:italic;
+}
+.square{
+	border:1px #aaa solid;
+	height:75px;
+	width:150px;
+}
+table tr#first td{
+	text-align:center;
+}
+#margl{
+	margin-left:4.7%;
+	margin-top:0%;
+}
+#Save input{
+	height:38px;
+	min-width:100px;
+	font-size:85%;
+	color:white;
+	background:#8f8;
+}
+#finish{
+	float:right;
+}
+#st{
+    float:left;
+}
+#cat{
+	font-family:"Segoe print";
+	font-size:200%;	
+}
+#green{
+    color:rgb(90,240,120);
+	font-family:"Impact";
+	font-size:225%;
+}
+#yellow{
+	color:#fd0;             
+	font-family:"Impact";
+	font-size:225%;
+}
+#orange{
+    color:rgb(236,101,19);
+	font-family:"Impact";
+	font-size:225%;
+}
+#red{
+    color:rgb(255,15,15);
+	font-family:"Impact";
+	font-size:225%;
+}
+#num{
+	font-family:"Times new roman";
+	font-size:150%;
+	padding-right:40px;	
+}
+h3{
+	margin:0px;
+	padding:0px;
+}
+#center{
+	text-align:center;
+}
+div#center table{
+	font-size:125%;
+}
+.message{                                                                                      
+    background:#ddd;
+    position:absolute;
+    width:25%;
+    margin-top:9%;
+    margin-left:37%;
+	border:2px solid;
+	min-height:9%;
+	padding:10px;
+}
+.message input{
+    margin-top:3%;
+	margin-left:0%;
+}
+#big{
+	font-family:cursive;
+}
+#str{
+    text-align:center;
+	font-size:125%;
+	margin-bottom:15px;
+	color:#777;
+	font-family:"Arial";	
+}
+tr#fst td{
+	border-bottom:1px solid #000;
+	padding-bottom:5px;
+}
+#show_save{
+	background:	url("../images/ok.png");
+	height:24px;
+	width:24px;
+}
+#show_del{
+	background:	url("../images/no.png");
+	height:24px;
+	width:24px;
+	color:white;
+}
+#show_add{
+	background:	url("../images/plus.png");
+	height:24px;
+	width:24px;
+	color:white;
+}
+#invise{
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-bottom:1px ridge #777;
+}
+#li_circle{
+	list-style:circle;
+}
+#rig{
+	margin-left:2%;
+}
+#show_word{
+    font-size:750%;
+	font-family:"Arial Black";
+	margin-bottom:5%;	
+}
+#show_word2{
+    font-size:500%;
+	font-family:"Arial Black";
+	margin-bottom:5%;	
+}
+#zero{
+	padding:10px;
+	height:50px;
+    min-width:150px;
+	font-size:130%;
+	color:green;
+	border:3px solid #8f8;
+}
+#time{
+    background:#efe;
+    border:1px #5f5 solid;
+    padding:7.5px;
+	float:right;
+	margin-top:-25.1%;
+	font-size:200%;
+	text-align:center;
+}
+#result{
+	text-align:center;	
+	font-size:125%;
+	border-radius:10;
+}
+#result td{
+    border-radius:10;
+	border:1px solid;
+}
+#result #name_of_team{
+	text-align:left;
+}
+#result #other td{
+	padding:8px;
+}
+#result #fst td{
+	background:#8f8;
+	padding:8px;
+}
+#result tr:hover{
+	background:#cfc;
+}
+#zer{
+	padding:10px 25px;
+	height:10px;
+    width:150px;
+	font-size:90%;
+	color:green;
+	border:2px solid #8f8;
+}
+#sectur{
+	text-align:center;	
+	font-size:200%;
+}
+#sectur #fst td{
+	background:#8f8;
+	padding:10px;
+}
+#sectur #categ{
+    width:375px;
+	font-size:150%;
+	text-align:right;
+	border:0px;
+}
+#sectur #fst td{
+    border:0px;
+	background:white;
+}
+#show_words{
+	min-height:60%;
+}
+#sectur td{
+	border-radius:10;
+}
+#sectur #win{
+    color:#0a0;
+	border:0px;
+	font-size:50%;
+}
+#sectur #open{
+    color:orange;
+	border:0px;
+	font-size:50%;
+}
+#sectur #lose{
+    font-size:50%;
+	border:0px;
+	color:red;
+}
+#sectur #oth input {
+    font-size:50%;
+	padding:15px 49px;
+	background:white;
+	border:1px solid #000;
+}
+
+#sectur #oth input:hover {
+    font-size:50%;
+	padding:15px 49px;
+	background:#cfc;
+	border:1px solid blue;
+	color:blue;
+}
+#sectur #oth input:active {
+    font-size:50%;
+	padding:15px 49px;
+	background:#cfc;
+	border:0px;
+	color:white;
+	margin-top:1%;
+}
+#time2{
+    background:#efe;
+    border:1px #5f5 solid;
+    padding:7.5px;
+	float:right;
+	margin-top:-18%;
+	font-size:200%;
+	text-align:center;
+}
