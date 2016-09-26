@@ -20,7 +20,7 @@
 		echo "
 		<html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Крокодил</title>                                                  			   	
+		<title>В РљСЂРѕРєРѕРґРёР»</title>                                                  			   	
 		<link rel='shortcut icon' href='images/favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='../style/style.css'>                 			   	
 	</head>                                                                      			   	
@@ -29,16 +29,16 @@
 			<div id='header'>                                                    			    
 			    <h1>                                                             			    
     				<a href='http://www.crocodile.kz'>                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
 			<div id='content'>                                                   			    
-				<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+				<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 		</body>
 	    </html>";	
@@ -55,10 +55,10 @@
     if(isset($_POST["next"])){
 ?>    	
 	<div class = "message">
-	        Вы уверены что хотите закончить игру?<br>
+	        Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ Р·Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ?<br>
 			<form action = "results.php" method = "post">
-			 	<input type="submit" name="END" value="Да">
-				<input type="submit" name="NO" value="Нет">
+			 	<input type="submit" name="END" value="Ж’Р°">
+				<input type="submit" name="NO" value="РЊРµС‚">
 			</form>
 	</div>			
 <?php 
@@ -110,7 +110,7 @@
 ?>
 <html>
 	<head>
-		<title>Результаты</title>
+		<title>Р РµР·СѓР»СЊС‚Р°С‚С‹</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -119,17 +119,17 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
 				<div id="finish">
 				<span id="str">
-				Автор: <?php echo $author;?>
+				РђРІС‚РѕСЂ: <?php echo $author;?>
 				</span>
 	        	</div>
-				<span id="str">Результаты (Игра №<?php echo $id;?>)</span>
+				<span id="str">Р РµР·СѓР»СЊС‚Р°С‚С‹ (РёРіСЂР° #<?php echo $id;?>)</span>
 				<hr>
 <div id="center">
 <br>
@@ -137,7 +137,7 @@
 	$winners = "";
   	$m = new mysqli("localhost","root","","archive_crocodile");			
 	$m -> query("SET NAMES 'cp1251'");
-	echo "<br><img width='80px' height='80px' src='images/cup.jpg'><span style='font-family:Comic Sans MS; font-size:300%'> Чемпионы </span><img width='80px' height='80px' src='images/cup.jpg'><br><br>";
+	echo "<br><img width='80px' height='80px' src='images/cup.jpg'><span style='font-family:Comic Sans MS; font-size:300%'> вЂћРµРјРїРёРѕРЅС‹ </span><img width='80px' height='80px' src='images/cup.jpg'><br><br>";
 	$fst = $KOL[1] + $KOL2[1];
 	for($t = 1;$t <= $n;++ $t){
 		$ob = $KOL[$t] + $KOL2[$t];
@@ -157,7 +157,7 @@
 ?>
 <br>
 <table id="result" align="center">
-<tr id="fst"><td>Место</td><td>Команда</td><td>Тур 1</td><td>Тур 2</td><td>Общий</td></tr>
+<tr id="fst"><td>С›РµСЃС‚Рѕ</td><td>РљРѕРјР°РЅРґР°</td><td>РўСѓСЂ 1</td><td>РўСѓСЂ 2</td><td>РћР±С‰РёР№</td></tr>
 <?php
 for($i = 1;$i <= $n;++ $i){
 $ob = $KOL[$i] + $KOL2[$i];
@@ -174,14 +174,14 @@ echo "<tr id='other'>
 		    <br>
 			<div id="add_word">
 				<form action="results.php" method="post">
-					<input type="submit" name= "next" value="Выход">
+					<input type="submit" name= "next" value=В«Р’С‹С…РѕРґ">
 				</form>
 			</div>
 		</div>
 			</div>            
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
