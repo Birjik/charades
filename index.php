@@ -22,7 +22,7 @@
 </script>
 <html>
 	<head>  
-		<title>Крокодил</title>
+		<title>В РљСЂРѕРєРѕРґРёР»</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -31,35 +31,35 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
 				</a>
 			    </h1>
 			</div>
 			<div id="content">
 				<a href="play.php">
 					<div id="button">
-						Игра
+						РРіСЂР°
 					</div>
 				</a>
 				<a href="archive.php">
 					<div id="button">
-						Архив		
+						РђСЂС…РёРІ		
 					</div>
 				</a>
 				<a href="add.php">
 					<div id="button">
-						Добавить игру			
+						Р”РѕР±Р°РІРёС‚СЊ РёРіСЂСѓ			
 					</div>
 				</a>
 				<a href="about.html">
 					<div id="button">
-						Об игре			
+						РћР± РёРіСЂРµ			
 					</div>
 				</a>
 			</div>         
 		</div>    
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div> 
 	</div>	
 	</body>
