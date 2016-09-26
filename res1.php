@@ -20,7 +20,7 @@
 		echo "
 		<html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Крокодил</title>                                                  			   	
+		<title>В РљСЂРѕРєРѕРґРёР»</title>                                                  			   	
 		<link rel='shortcut icon' href='images/favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='../style/style.css'>                 			   	
 	</head>                                                                      			   	
@@ -29,16 +29,16 @@
 			<div id='header'>                                                    			    
 			    <h1>                                                             			    
     				<a href='http://www.crocodile.kz'>                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
 			<div id='content'>                                                   			    
-				<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+				<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 		</body>
 	    </html>";	
@@ -94,7 +94,7 @@
 </script>
 <html>
 	<head>
-		<title>Крокодил</title>
+		<title>В СЂРѕРєРѕРґРёР»</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -103,22 +103,22 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">                               			    
-				    	Крокодил
+				    	В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
 			    <div id="finish">
 					<span id="str">
-						Автор: <?php echo $author;?>
+						РђРІС‚РѕСЂ: <?php echo $author;?>
 					</span> 
 				</div>
 				<span id="str">                                                 
-					Результаты после первого тура (Игра №<?php echo $id;?>)
+					Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕСЃР»Рµ РїРµСЂРІРѕРіРѕ С‚СѓСЂР° (РёРіСЂР° #<?php echo $id;?>)
 				</span> 
 				<hr>
 <table id="result" align="center">
-<tr id="fst"><td>Место</td><td>Команда</td><td>Очко</td></tr>
+<tr id="fst"><td>РњРµСЃС‚Рѕ</td><td>В РљРѕРјР°РЅРґР°</td><td>РћС‡РєРѕ</td></tr>
 <?php
 for($i = 1;$i <= $n;++ $i)echo "<tr id='other'><td align='center'>".$i."</td><td id='name_of_team'>".$TEAMS[$i]."</td><td align='center'>".$KOL[$i]."</td></tr>";
 ?>
@@ -127,14 +127,14 @@ for($i = 1;$i <= $n;++ $i)echo "<tr id='other'><td align='center'>".$i."</td><td
 		    <br>
 			<div id="add_word">
 				<form action="res1.php" method="post">
-					<input type="submit" name= "next" value="Дальше">
+					<input type="submit" name= "next" value="Ж’Р°Р»СЊС€Рµ">
 				</form>
 			</div>
 		</div>
 			</div>
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
