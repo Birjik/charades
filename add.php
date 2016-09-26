@@ -2,11 +2,11 @@
     function okw($str){
     	for($l = 0;$l < strlen($str);++ $l){
     		if('0' <= $str[$l] && $str[$l] <= '9')return true;
-    		if('А' <= $str[$l] && $str[$l] <= 'Я')return true;
-    		if('а' <= $str[$l] && $str[$l] <= 'я')return true;
+    		if('С' <= $str[$l] && $str[$l] <= 'СЏ')return true;
+    		if('Р°' <= $str[$l] && $str[$l] <= 'в‚¬')return true;
     		if('A' <= $str[$l] && $str[$l] <= 'Z')return true;
     		if('a' <= $str[$l] && $str[$l] <= 'z')return true;
-    		if($str[$l] == 'і')return true;
+    		if($str[$l] == 'в‰Ґ')return true;
     	}
     	return false;
     }
@@ -71,7 +71,7 @@
 ?>
 <html>
 	<head>
-		<title>Добавление игры</title>
+		<title>Ж’РѕР±Р°РІР»РµРЅРёРµ РёРіСЂС‹</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -80,38 +80,38 @@
 			<div id="header">                                          
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
-				<div id="center"><span id="str">Подготовление игры №<?php if($prepare==0)echo $next;else echo $prepare;?></span></div>
-	        	<h1 align="center"><i>Введите слово, которое хотели добавить</i></h1>
+				<div id="center"><span id="str">С•РѕРґРіРѕС‚РѕРІР»РµРЅРёРµ РёРіСЂС‹ С”<?php if($prepare==0)echo $next;else echo $prepare;?></span></div>
+	        	<h1 align="center"><i>Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ С…РѕС‚РµР»Рё РґРѕР±Р°РІРёС‚СЊ</i></h1>
 	        	<form action="add.php" method="post">
 					<div id="word">
 						<input type="text" name="word">
 					</div>
 					<div id="add_word">
-						<input type="submit" value="Добавить">
+						<input type="submit" value=В«Р”РѕР±Р°РІРёС‚СЊ">
 					</div>
 				</form>
 				<div id="count">
-					В словаре имеются  
+					Р’ СЃР»РѕРІР°СЂРµ РёРјРµСЋС‚СЃСЏ  
 					<?php 
-						echo "<a href='http://www.crocodile.kz/lib/show.php'>".$kol."</a> слов";
-						if($kol%10==1 && ($kol%100)!=11)echo "о";
-						else if($kol%10>1 && $kol%10<5 && ($kol<10 || $kol>19))echo "а";
+						echo "<a href='http://www.crocodile.kz/lib/show.php'>".$kol."</a> СЃР»РѕРІ";
+						if($kol%10==1 && ($kol%100)!=11)echo "Рѕ";
+						else if($kol%10>1 && $kol%10<5 && ($kol<10 || $kol>19))echo "Р°";
 					?>.
 				</div>
 			</div>            
 			<div id="finish">    
 				<a href="http://www.crocodile.kz/add2.php">
-					Тур 2
+					РўСѓСЂ 2
 				</a>   
         	</div>
 		</div>                                     
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; ССѓРіР°РЅРѕРІ Р…РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
