@@ -64,7 +64,7 @@
 			</div>         
 		</div>    
 		<div id="footer">
-			&copy; Ауганов Б иржан 2014
+			&copy; Ауганов Биржан 2014
 		</div> 
 	</div>	
 	</body>
