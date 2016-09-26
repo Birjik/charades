@@ -166,7 +166,7 @@
 		$result = $m -> query("SELECT * FROM `$table`");
 		$n = $result -> num_rows;
         foreach($_POST as $key => $value){
-        	if($value == 'Ãîòîâî'){
+        	if($value == 'âˆšÐ¾Ñ‚Ð¾Ð²Ð¾'){
 				$m -> query("UPDATE `archive` SET `cur`='1' WHERE `status`='running'");			   	
 				header("Location:http://www.crocodile.kz/1.php");				
         		exit;
@@ -298,7 +298,7 @@
 		exit;
 	}
 	if(isset($_GET["end"])){
-		if($_POST["ok"] == "Äà"){
+		if($_POST["ok"] == Â«Ð”Ð°Â»){
 			header("Location:http://www.crocodile.kz/1.php");				
 			$m -> query("UPDATE `archive` SET `cur`='1' WHERE `status`='running'");			   	
         	exit;
