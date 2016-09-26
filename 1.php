@@ -35,10 +35,10 @@
 	if(isset($_GET["next"])){
 ?>		
 	<div class = "message">
-	        Вы уверены что хотите закончить игру?<br>
+	        Р’ С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ Р·Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ?<br>
 			<form action = "1.php" method = "post">
-			 	<input type="submit" name="END" value="Да">
-				<input type="submit" name="NO" value="Нет">
+			 	<input type="submit" name="END" value=В«yesВ»>
+				<input type="submit" name="NO" value=В«no В»>
 			</form>
 	</div>			
 <?php
@@ -56,7 +56,7 @@
 		echo "
 		<html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Крокодил</title>                                                  			   	
+		<title>В РљСЂРѕРєРѕРґРёР»</title>                                                  			   	
 		<link rel='stylesheet' type='text/css' href='../style/style.css'>                 			   	
 		<link rel='shortcut icon' href='images/favicon.ico'>
 	</head>                                                                      			   	
@@ -65,16 +65,16 @@
 			<div id='header'>                                                    			    
 			    <h1>                                                             			    
     				<a href='http://www.crocodile.kz'>                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
 			<div id='content'>                                                   			    
-				<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+				<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 		</body>
 	    </html>";	
@@ -167,7 +167,7 @@
 </script>
 <html>
 	<head>
-		<title>Тур 1</title>
+		<title>РўСѓСЂ 1</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -178,30 +178,30 @@
     				<a href="<?php 
     				if($left == -1)echo "http://www.crocodile.kz";
     				else "#";?>">
-				    	Крокодил
+				    	В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
 				<div id="finish">
 				<span id="str">
-				Автор: <?php echo $author;?>
+				СРІС‚РѕСЂ: <?php echo $author;?>
 				</span>
 	        	</div>
-				<span id="str">Тур 1 (Игра №<?php echo $id;?>)</span>
+				<span id="str">РўСѓСЂ 1 (В»РіСЂР° С”<?php echo $id;?>)</span>
 				<hr>
 				<div id="center">
 				    <?php if($left == -1){?>
 				    <br><br><br>				   
-					<span style="color:grey; font-size:200%">Ожидание команды : <span style="color:green"><?php echo $name;?></span> (№<?php echo $cur;?>)</span>
+					<span style="color:grey; font-size:200%">РћР¶РёРґР°РЅРёРµ РєРѕРјР°РЅРґС‹ : <span style="color:green"><?php echo $name;?></span> (С”<?php echo $cur;?>)</span>
 				    <br><br><br>
-					<span style="font-size:125%">Осталось <?php echo $cnt;?> слов.</span>
+					<span style="font-size:125%">СњСЃС‚Р°Р»РѕСЃСЊ <?php echo $cnt;?> СЃР»РѕРІ.</span>
 					<br><br><br>
 					<div id="add_word">
 						<form action="lib/upd.php" method="post">
-							<input name="next" type="submit" value="Играть!">
+							<input name="next" type="submit" value="В»РіСЂР°С‚СЊ!">
 							&nbsp;
-							<input name="endr" type="submit" value="Закончить тур">
+							<input name="endr" type="submit" value="В«Р°РєРѕРЅС‡РёС‚СЊ С‚СѓСЂ">
 						</form>
 					</div>
 					<?php }
@@ -236,40 +236,40 @@
 					</div>
 					<div id="add_word">
 					<form action="lib/upd.php?play_time=1" method="post">
-						<input name="a<?php echo $wid;?>" type="submit" value="Правильно">
+						<input name="a<?php echo $wid;?>" type="submit" value=В«РџСЂР°РІРёР»СЊРЅРѕ">
 						&nbsp;
 						<?php
 							$left = file_get_contents("style/left.txt");
 							if($left == 0){
-								echo "<span id='zero'>Следующий [0]</span>";													
+								echo "<span id='zero'>вЂ”Р»РµРґСѓСЋС‰РёР№ [0]</span>";													
 							}
 							else {
 						?>
-						<input name="b<?php echo $wid;?>" type="submit" value="Следующий [<?php echo file_get_contents("style/left.txt");?>]">						
+						<input name="b<?php echo $wid;?>" type="submit" value=В«РЎР»РµРґСѓСЋС‰РёР№ [<?php echo file_get_contents("style/left.txt");?>]">						
 						<?php }?>
 					</form>                                               
 					</div>
 					<br>
 					<br>
-					<span style="font-size:125%">Осталось <?php echo $cnt;?> слов<?php 
-						if($cnt%10==1 && $cnt!=11)echo "о";
-						else if($cnt%10>1 && $cnt%10<5 && ($cnt<10 || $cnt>19))echo "а";
+					<span style="font-size:125%">РћСЃС‚Р°Р»РѕСЃСЊ <?php echo $cnt;?> СЃР»РѕРІ<?php 
+						if($cnt%10==1 && $cnt!=11)echo "Рѕ";
+						else if($cnt%10>1 && $cnt%10<5 && ($cnt<10 || $cnt>19))echo "Р°";
 					?>.</span>
 				<?php }?>
 				</div>
 	            <?php if($left != -1){?>
 				<div id="time"> 
-					Осталось<br>
+					РћСЃС‚Р°Р»РѕСЃСЊ<br>
 					<span id="timer">
 						0.0
 					</span><br>
-					секунд
+					СЃРµРєСѓРЅРґ
 				</div>
 				<?php }?>
 			</div>            
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
