@@ -3,7 +3,7 @@
 ?>
 <html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Регистрация команд</title>                                                  			   	
+		<title>Р РµРіРёСЃС‚СЂР°С†РёСЏ РєРѕРјР°РЅРґ</title>                                                  			   	
 		<link rel="stylesheet" type="text/css" href="../style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>                                                                      			   	
@@ -27,7 +27,7 @@
 		echo "
 		<html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Крокодил</title>                                                  			   	
+		<title>В РљСЂРѕРєРѕРґРёР»</title>                                                  			   	
 		<link rel='shortcut icon' href='images/favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='../style/style.css'>                 			   	
 	</head>                                                                      			   	
@@ -36,16 +36,16 @@
 			<div id='header'>                                                    			    
 			    <h1>                                                             			    
     				<a href='http://www.crocodile.kz'>                               			    
-					    Крокодил                                                 			    
+					    РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
 			<div id='content'>                                                   			    
-				<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+				<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 		</body>
 	    </html>";	
@@ -57,11 +57,11 @@
 	if($_GET['end']){
 ?>
 		<div class = "message">
-			 	Вы уверены что имена всех команд и участников написаны правильно?
+			 	Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ РёРјРµРЅР° РІСЃРµС… РєРѕРјР°РЅРґ Рё СѓС‡Р°СЃС‚РЅРёРєРѕРІ РЅР°РїРёСЃР°РЅС‹ РїСЂР°РІРёР»СЊРЅРѕ?
 			 	<br>
 				<form action = "lib/upd.php?end=<?php echo $id;?>" method = "post">
-				 	<input type="submit" name="ok" value="Да">
-					<input type="submit" name="ok" value="Нет">
+				 	<input type="submit" name="ok" value=В«yesВ»>
+					<input type="submit" name="ok" value=В«noВ»>
 				</form>
 		</div>			
 <?php 
@@ -80,7 +80,7 @@
 			<div id="header">                                                    			    
 			    <h1>                                                             			    
     				<a href="http://www.crocodile.kz">                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
@@ -112,10 +112,10 @@
 			<div id="content">
 				<div id="finish">
 				<span id="str">
-				Автор: <?php echo $author;?>
+				СРІС‚РѕСЂ: <?php echo $author;?>
 				</span>
 	        	</div>
-				<span id="str">Регистрация команд (Игра №<?php echo $id;?>)</span>
+				<span id="str">вЂ“РµРіРёСЃС‚СЂР°С†Рёв‚¬ РєРѕРјР°РЅРґ (В»РіСЂР° С”<?php echo $id;?>)</span>
 				<hr>
 				    <ul id="registr">
 					<?php
@@ -124,9 +124,9 @@
 						    $ii = $ID[$i];
 						    $wr = "word".$ii;
 						    if($i!=1)echo "<br>";
-							echo "<li><span id='need$ii'style='font-size:125%'>Команда №$ii</span><br>
+							echo "<li><span id='need$ii'style='font-size:125%'>В РљРѕРјР°РЅРґР° #$ii</span><br>
 							<form action = 'lib/upd.php?add=$id' method = 'post'>
-							Название команды:
+							РЊР°Р·РІР°РЅРёРµ РєРѕРјР°РЅРґС‹:
 							<input type = 'text' value='$nn' name='$wr' id='invise'>&nbsp;
 							<input id='show_save' type = 'submit' value=' ' name='$ii'>
 							<input id='show_del' type = 'submit' value	='.' name='$ii'>
@@ -158,7 +158,7 @@
 						    	<span id = '$index $ii'>
 						    	<li> 
 								<form action = 'lib/upd.php?change_player=$id' method = 'post'>
-						    		Участник ".$index." <input type='text' value='".$NM2[$j]."' name='must'>
+						    		РЈС‡Р°СЃС‚РЅРёРє ".$index." <input type='text' value='".$NM2[$j]."' name='must'>
 	    							<input id='show_save' type = 'submit' value = ' ' name='$ii $index'>
 									<input id='show_del' type = 'submit' value = '.' name='$ii $index'>
 						    	</form>
@@ -170,7 +170,7 @@
 							echo "
 								<form action = 'lib/upd.php?add_player=$id' method = 'post'>
 									<input type='submit' name = '$ii' value=' ' id='show_add'> 
-									<span style='font-family:Verdana; color:#777; font-size:72.5%'>Добавить участника </span>
+									<span style='font-family:Verdana; color:#777; font-size:72.5%'>Р”РѕР±Р°РІРёС‚СЊ СѓС‡Р°СЃС‚РЅРёРєР° </span>
 								</form>						
 								";
 							echo "</li>
@@ -183,22 +183,22 @@
 					<form action = "lib/upd.php?add=<?php echo $id;?>" method = "post">
 						<div id="save">
 							<?php if($n<=7){?>
-								<span id = "need"><input type="submit" value="Добавить команду" name="add"></span>
+								<span id = "need"><input type="submit" value=В«Р”РѕР±Р°РІРёС‚СЊ РєРѕРјР°РЅРґСѓ" name="add"></span>
 							<?php } else {?>
-								<span id ="need"><span id = "zer">Добавить команду</span></span><?php }?>
+								<span id ="need"><span id = "zer">Р”РѕР±Р°РІРёС‚СЊ РєРѕРјР°РЅРґСѓ</span></span><?php }?>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<?php if($n==0){								
-							echo "<span id='zer'>Готово</span>";}else {?><a href='/registration.php?end=1'><input type="button" value="Готово"></a>
+							echo "<span id='zer'>Р“РѕС‚РѕРІРѕ</span>";}else {?><a href='/registration.php?end=1'><input type="button" value=В«Р“РѕС‚РѕРІРѕ"></a>
 							<?php } ?>
 						</div>	
 					</form>
 			</div>         
 		</div>    
 		<div id="footer">                                                         
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div> 
 	</div>	
 	</body>
