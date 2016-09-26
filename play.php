@@ -41,15 +41,15 @@
 ?>
 	    <div class = "message">
 		    <form action='play.php' method='post'>
-		        Вы не сможете начать текущую игру, не закончив игру №<?php echo $id;?><br>
-				<input type='submit' value='ОК'> 
+		        	Р’С‹ РЅРµ СЃРјРѕР¶РµС‚Рµ РЅР°С‡Р°С‚СЊ С‚РµРєСѓС‰СѓСЋ РёРіСЂСѓ, РЅРµ Р·Р°РєРѕРЅС‡РёРІ РёРіСЂСѓ <?php echo $id;?><br>
+				<input type='submit' value=вЂvalвЂ™> 
 			</form>
 		</div>	
 <?php 	}    	
     if(isset($_GET['start'])){
     	$start = $_GET['start'];
     	if($_POST['ans']){
-			if($_POST['ans'] == 'Нет'){
+			if($_POST['ans'] == вЂgРµС‚'){
 				header("Location:http://www.crocodile.kz/play.php");
 				exit;			
 			}
@@ -64,12 +64,12 @@
     ?>
 	    <div class = "message">
 		    <form action='play.php?start=<?php echo $start;?>' method='post'>
-		        Вы уверены что хотите начать игру?<br>
-				<input type='submit' name='ans' value='Да'> 
-				<input type='submit' name='ans' value='Нет'> 
+		        Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РЅР°С‡Р°С‚СЊ РёРіСЂСѓ?<br>
+				<input type='submit' name='ans' value=вЂyesвЂ™> 
+				<input type='submit' name='ans' value=вЂnoвЂ™> 
 				<br>				
 				<font size="2">
-				* Предупреждение: не закончив текущую игру, невозможно начать следующую.</font>
+				* РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: РЅРµ Р·Р°РєРѕРЅС‡РёРІ С‚РµРєСѓС‰СѓСЋ РёРіСЂСѓ, РЅРµРІРѕР·РјРѕР¶РЅРѕ РЅР°С‡Р°С‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ.</font>
 				<br>
 			</form>
 		</div>	
@@ -78,20 +78,20 @@
     }
     function convert($s){
 		$months = array();
-		$months[1] = "января";
-		$months[2] = "февраля";
-		$months[3] = "марта";
-		$months[4] = "апреля";
-		$months[5] = "мая";
-		$months[6] = "июня";
-		$months[7] = "июля";
-		$months[8] = "августа";
-		$months[9] = "сентября";
-		$months[10] = "октября";
-		$months[11] = "ноября";
-		$months[12] = "декабря";
+		$months[1] = В«РЇРЅРІР°СЂСЏВ»;
+		$months[2] = "С„РµРІСЂР°Р»СЏВ»;
+		$months[3] = "РјР°СЂС‚Р°В»;
+		$months[4] = "Р°РїСЂРµР»СЏВ»;
+		$months[5] = "РјР°СЏВ»;
+		$months[6] = "РёСЋРЅСЏВ»;
+		$months[7] = "РёСЋР»СЏВ»;
+		$months[8] = "Р°РІРіСѓСЃС‚Р°";
+		$months[9] = "СЃРµРЅС‚СЏР±СЂСЏВ»;
+		$months[10] = "РѕРєС‚СЏР±СЂСЏВ»;
+		$months[11] = "РЅРѕСЏР±СЂСЏВ»;
+		$months[12] = "РґРµРєР°Р±СЂСЏВ»;
     	$sec = "";
-    	$result = "в ";
+    	$result = " ";
     	$ok = false;
     	for($j = 0;$j < strlen($s);++ $j){
     		if($s[$j] == ' '){
@@ -140,7 +140,7 @@
 ?> 
 <html>
 	<head>  
-		<title>Игра</title>
+		<title>Р РіСЂР°</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -149,7 +149,7 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>                          	
 			</div>
@@ -158,21 +158,21 @@
 	if($AT2 != -1){      
 	    $DT2 = convert($DT2);
 	    echo "
-		<div id='str'>В процессе :</div>
+		<div id='str'>В¬ РїСЂРѕС†РµСЃСЃРµ :</div>
 		<table cellspacing='0' align='center' id='result'>
-		<tr id='fst'><td>№</td><td>&nbsp;Автор</td><td>Дата подготовление</td><td>&nbsp;</td></tr>
-		<tr id='other'><td>$id</td><td>$AT2</td><td>$DT2</td><td><a href='$cur.php' style='color:orange'>Играть</a></td></tr>
+		<tr id='fst'><td>С”</td><td>&nbsp;СРІС‚РѕСЂ</td><td>Ж’Р°С‚Р° РїРѕРґРіРѕС‚РѕРІР»РµРЅРёРµ</td><td>&nbsp;</td></tr>
+		<tr id='other'><td>$id</td><td>$AT2</td><td>$DT2</td><td><a href='$cur.php' style='color:orange'>В»РіСЂР°С‚СЊ</a></td></tr>
 		</table>                                                                                                                               
 		<br>";
-		if($len > 0)echo "<div id='str'>Еще игры:</div>";
+		if($len > 0)echo "<div id='str'>в‰€С‰Рµ РёРіСЂС‹:</div>";
 	}
 	else if($len > 0){
-		echo "<div id='str'>Игры которые вы можете начать :</div>";	
+		echo "<div id='str'>В»РіСЂС‹ РєРѕС‚РѕСЂС‹Рµ РІС‹ РјРѕР¶РµС‚Рµ РЅР°С‡Р°С‚СЊ :</div>";	
 	}
 	if($len > 0){
 ?>
 <table cellspacing="0" align="center" id="result">
-<tr id="fst"><td>№</td><td>&nbsp;Автор</td><td>Дата подготовление</td><td>&nbsp;</td></tr>
+<tr id="fst"><td>С”</td><td>&nbsp;СРІС‚РѕСЂ</td><td>Р”Р°С‚Р° РїРѕРґРіРѕС‚РѕРІР»РµРЅРёРµ</td><td>&nbsp;</td></tr>
 <?php
 	for($i = 1;$i <= $len;$i ++){
 		$index = $ID[$i];
@@ -181,7 +181,7 @@
 		$new = convert($DT[$i]);
 		echo "<tr id='other'>
 		<td>".$index."</td><td>".$AT[$i]."</td><td>".$new."</td>
-		<td><a href='play.php?$go' style='color:green'>Начать</a></td></tr>";
+		<td><a href='play.php?$go' style='color:green'>РќР°С‡Р°С‚СЊ</a></td></tr>";
 	}                                                           
 ?>
 </table>
@@ -190,13 +190,13 @@
 }
 if($len == 0 && $AT2==-1){
 ?>
-<div id="str">К сожалению пока игр нет</div>
+<div id="str">Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ РїРѕРєР° РёРіСЂ РЅРµС‚</div>
 <?php }
 ?>		      
 		</div>    
 	</div>	
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div> 
 	</body>
 </html>
