@@ -34,7 +34,7 @@
 ?>
 <html>
 	<head>  
-		<title>Архив</title>
+		<title>ССЂС…РёРІ</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>                         
@@ -43,28 +43,28 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В СЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
-				<div id='str'>Архив игр:</div>	
+				<div id='str'>РђСЂС…РёРІ РёРіСЂ:</div>	
 				<table cellspacing="0" align="center" id="result">
-					<tr id="fst"><td>№</td><td>&nbsp;Автор</td><td>Дата</td><td>&nbsp;</td></tr>
+					<tr id="fst"><td>С”</td><td>&nbsp;СРІС‚РѕСЂ</td><td>Р”Р°С‚Р°</td><td>&nbsp;</td></tr>
 <?php
 		for($i = 1;$i <= $len;$i ++){
 			$index = $ID[$i];
 			$date = convert($DT[$i]);
 			echo "<tr id='other'>
 			<td>".$index."</td><td>".$AT[$i]."</td><td>".$date."</td>
-			<td><a href='#' style = 'color:green'>Дальше</a></td></tr>";
+			<td><a href='#' style = 'color:green'>Р”Р°Р»СЊС€Рµ</a></td></tr>";
 		}                                                           
 ?>
 				</table>
 			</div>         
 		</div>    
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘ РёСЂР¶Р°РЅ 2014
 		</div> 
 	</div>	
 	</body>
