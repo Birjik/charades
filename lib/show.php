@@ -10,7 +10,7 @@
 ?>
 <html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Добавление игры</title>                                                  			   	
+		<title>Р”РѕР±Р°РІР»РµРЅРёРµ РёРіСЂС‹</title>                                                  			   	
 		<link rel="stylesheet" type="text/css" href="../style/style.css">                 			   	
 		<link rel='shortcut icon' href='../images/favicon.ico'>
 	</head>                                                                      			   	
@@ -19,7 +19,7 @@
 			<div id="header">                                                    			    
 			    <h1>                                                             			    
     				<a href="http://www.crocodile.kz">                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
@@ -27,11 +27,11 @@
 	if($id == 0){
 		echo "
 			<div id='content'>                                                   			    
-			<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+			<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
@@ -73,7 +73,7 @@
 ?>
 			<div id="content">                                                   			    
 				<div id = "center">
-				<span id="str">Подготовление игры №<?php echo $id;?></span>
+				<span id="str">РџРѕРґРіРѕС‚РѕРІР»РµРЅРёРµ РёРіСЂС‹ #<?php echo $id;?></span>
 				<br><br>                                     			    
 <?php                                                                            			    
 	if(isset($id)){                                                              			    
@@ -119,10 +119,10 @@
 ?>
         	</div>
 		</div>
-		<div id="finish"><a href="../add.php">Тур 1</a></div>
+		<div id="finish"><a href="../add.php">вЂњСѓСЂ 1</a></div>
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
