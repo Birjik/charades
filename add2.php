@@ -36,7 +36,7 @@
 	$name = $pr = -1;
 	if(isset($_POST['author'])){
 		$nm = $_POST['author'];
-		if($nm != "Иван Иванов"){
+		if($nm != "В»РІР°РЅ В»РІР°РЅРѕРІ"){
 			$next = 0;
 			$tb = $prepare."_1";
 			$cc = $m -> query("SELECT * FROM `$tb`");
@@ -60,7 +60,7 @@
 ?>
 <html>
 	<head>                                                
-		<title>Добавление игры</title>
+		<title>Р”РѕР±Р°РІР»РµРЅРёРµ РёРіСЂС‹</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">                 			   	
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -70,7 +70,7 @@
 	if($pr == 1){?>
 		<div class = "message">
 		    <form action='add2.php' method='post'>
-			    В первом туре требуется минимум 30 слов!<br>
+			    Р’ РїРµСЂРІРѕРј С‚СѓСЂРµ С‚СЂРµР±СѓРµС‚СЃСЏ РјРёРЅРёРјСѓРј 30 СЃР»РѕРІ!<br>
 				<input type="submit" name="ok" value="OK">
 			</form>
 		</div>
@@ -80,7 +80,7 @@
 	?>	
 		<div class = "message">
 		    <form action='add2.php' method='post'>
-			    Проверьте орфографию и наличие пустых клеток второго раунда!<br>
+			    РџСЂРѕРІРµСЂСЊС‚Рµ РѕСЂС„РѕРіСЂР°С„РёСЋ Рё РЅР°Р»РёС‡РёРµ РїСѓСЃС‚С‹С… РєР»РµС‚РѕРє РІС‚РѕСЂРѕРіРѕ СЂР°СѓРЅРґР°!<br>
 				<input type="submit" name="ok" value="OK">
 			</form>
 		</div>	
@@ -89,11 +89,11 @@
 	if($pr == 0){?>
 		<div class = "message">
 		    <form action='add2.php' method='post'>
-			    Благодарим за подготовку тура!<br>
-<input type="text" name="author" style="color: #777;" value="Иван Иванов" 
-onfocus="if (this.value == 'Иван Иванов') {this.value = ''; this.style.color = '#000';}" 
-onblur="if (this.value == '') {this.value = 'Иван Иванов'; this.style.color = '#777';}" /><br>
-				<font size="2">* это имя будет отображаться как автор тура.</font><br>
+			    Р‘Р»Р°РіРѕРґР°СЂРёРј Р·Р° РїРѕРґРіРѕС‚РѕРІРєСѓ С‚СѓСЂР°!<br>
+<input type="text" name="author" style="color: #777;" value=В«РРІР°РЅ РёРІР°РЅРѕРІ" 
+onfocus="if (this.value == 'В»РІР°РЅ В»РІР°РЅРѕРІ') {this.value = ''; this.style.color = '#000';}" 
+onblur="if (this.value == '') {this.value = 'В»РІР°РЅ В»РІР°РЅРѕРІ'; this.style.color = '#777';}" /><br>
+				<font size="2">* СЌС‚Рѕ РёРјСЏ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РєР°Рє Р°РІС‚РѕСЂ С‚СѓСЂР°.</font><br>
 				<input type="submit" name="ok" value="OK">
 			</form>
 		</div>	
@@ -105,15 +105,15 @@ onblur="if (this.value == '') {this.value = 'Иван Иванов'; this.style.color = '#
 			<div id="header">                                          
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
-				<div id="center"><span id="str">Подготовление игры №<?php echo $prepare;?></span></div>
+				<div id="center"><span id="str">РџРѕРґРіРѕС‚РѕРІР»РµРЅРёРµ РёРіСЂС‹ С”<?php echo $prepare;?></span></div>
 		       	<form action="lib/upd.php?game=<?php echo $prepare;?>" method="post">
 		       	   <table border = "0">
-		       	   		<tr id="first"> <td>&nbsp;</td><td id="cat">Категория</td> <td id="green">10</td> <td id="yellow">20</td> <td id="orange">30</td> <td id="red">40</td></tr>
+		       	   		<tr id="first"> <td>&nbsp;</td><td id="cat">В Р°С‚РµРіРѕСЂРёв‚¬</td> <td id="green">10</td> <td id="yellow">20</td> <td id="orange">30</td> <td id="red">40</td></tr>
 		       	   		<tr> <td id = "num">1.</td> <td><input class = "word2" name="10" value="<?php echo $table[1][0];?>"></td> <td><textarea class="square" name="11"><?php echo $table[1][1];?></textarea></td> <td><textarea class="square" name="12"><?php echo $table[1][2];?></textarea></td> <td><textarea class="square" name="13"><?php echo $table[1][3];?></textarea></td> <td><textarea class = "square" name="14"><?php echo $table[1][4];?></textarea></td></tr>
 		       	   		<tr> <td id = "num">2.</td> <td><input class = "word2" name="20" value="<?php echo $table[2][0];?>"></td> <td><textarea class="square" name="21"><?php echo $table[2][1];?></textarea></td> <td><textarea class="square" name="22"><?php echo $table[2][2];?></textarea></td> <td><textarea class="square" name="23"><?php echo $table[2][3];?></textarea></td> <td><textarea class = "square" name="24"><?php echo $table[2][4];?></textarea></td></tr>
 		       	   		<tr> <td id = "num">3.</td> <td><input class = "word2" name="30" value="<?php echo $table[3][0];?>"></td> <td><textarea class="square" name="31"><?php echo $table[3][1];?></textarea></td> <td><textarea class="square" name="32"><?php echo $table[3][2];?></textarea></td> <td><textarea class="square" name="33"><?php echo $table[3][3];?></textarea></td> <td><textarea class = "square" name="34"><?php echo $table[3][4];?></textarea></td></tr>
@@ -122,24 +122,24 @@ onblur="if (this.value == '') {this.value = 'Иван Иванов'; this.style.color = '#
 					<br>
 					<div id="margl">
 						<div id="Save">
-							<input type="submit" value="Сохранить">
+							<input type="submit" value=В«РЎРѕС…СЂР°РЅРёС‚СЊ">
 						</div>
 					</div>
 				</form>	
 			</div>            
 			<div id="st">
 				<a href="http://www.crocodile.kz/add.php">
-					Тур 1
+					РўСѓСЂ 1
 				</a>   
         	</div>
 			<div id="finish">
 				<a href="http://www.crocodile.kz/lib/finish.php?id=<?php echo $prepare;?>">
-					Готово
+					Р“РѕС‚РѕРІРѕ
 				</a>   
         	</div>
 		</div>                                     
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
