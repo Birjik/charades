@@ -3,10 +3,10 @@
     if(isset($_POST["end"])){
 ?>    	
 	<div class = "message">
-	        Вы уверены что хотите закончить игру?<br>
+	        Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ Р·Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ?<br>
 			<form action = "2.php" method = "post">
-			 	<input type="submit" name="END" value="Да">
-				<input type="submit" name="NO" value="Нет">
+			 	<input type="submit" name="END" value=В«yesВ»>
+				<input type="submit" name="NO" value=В«noВ»>
 			</form>
 	</div>			
 <?php  
@@ -22,13 +22,13 @@
     if(isset($_POST["open"])){
 ?>
 	<div class = "message">
-	        Вы уверены что хотите открыть все слова?<br>
+	        Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РѕС‚РєСЂС‹С‚СЊ РІСЃРµ СЃР»РѕРІР°?<br>
 			<form action = "2.php" method = "post">
-			 	<input type="submit" name="YES" value="Да">
-				<input type="submit" name="NO" value="Нет">
+			 	<input type="submit" name="YES" value=В«yesВ»>
+				<input type="submit" name="NO" value=В«noВ»>
 			<br>
 			<font size="2">
-			* Предупреждение: посмотрев слова вы не сможете продолжить игру.</font>
+			* РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ: РїРѕСЃРјРѕС‚СЂРµРІ СЃР»РѕРІР° РІС‹ РЅРµ СЃРјРѕР¶РµС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РёРіСЂСѓ.</font>
 			</form>
 	</div>			
 <?php
@@ -77,7 +77,7 @@
 		echo "
 		<html>               	                                                            			   	
 	<head>                                                                       			   	
-		<title>Крокодил</title>                                                  			   	
+		<title>В РљСЂРѕРєРѕРґРёР»</title>                                                  			   	
 		<link rel='shortcut icon' href='images/favicon.ico'>
 		<link rel='stylesheet' type='text/css' href='../style/style.css'>                 			   	
 	</head>                                                                      			   	
@@ -86,16 +86,16 @@
 			<div id='header'>                                                    			    
 			    <h1>                                                             			    
     				<a href='http://www.crocodile.kz'>                               			    
-					    Крокодил                                                 			    
+					    В РљСЂРѕРєРѕРґРёР»                                                 			    
     				</a>                                                         			    
 			    </h1>                                                            			    
 			</div>                                                               			    
 			<div id='content'>                                                   			    
-				<h1 align='center' style='color:red'>Произошла ошибка!</h1>
+				<h1 align='center' style='color:red'>РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°!</h1>
 			</div>
 		</div>
 		<div id='footer'>
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 		</body>
 	    </html>";	
@@ -121,7 +121,7 @@
 </script>
 <html>
 	<head>
-		<title>Тур 2</title>
+		<title>РўСѓСЂ 2</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -130,24 +130,24 @@
 			<div id="header">
 			    <h1>
     				<a href="http://www.crocodile.kz">
-				    Крокодил
+				    В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
 				<div id="finish">
 				<span id="str">
-				Автор: <?php echo $author;?>
+				РђРІС‚РѕСЂ: <?php echo $author;?>
 				</span>
 	        	</div>
-				<span id="str">Тур 2 (Игра №<?php echo $id;?>)</span>
+				<span id="str">РўСѓСЂ 2 (РРіСЂР°  #<?php echo $id;?>)</span>
 				<hr>
 				<div id="center">
 					<?php if($cnt1 == 17 || $cnt1 == 21){
 					?>
 					<span style="color:grey; font-size:200%">&nbsp;</span>
 					<?php } else {?>
-					<span style="color:grey; font-size:200%">Выбирает команда : <span style="color:green"><?php echo $name;?></span> (№<?php echo $cur;?>)</span>
+					<span style="color:grey; font-size:200%">Р’С‹Р±РёСЂР°РµС‚ РєРѕРјР°РЅРґР° : <span style="color:green"><?php echo $name;?></span> (# <?php echo $cur;?>)</span>
 					<?php  }?>
 				</div>
 		        <div id="sectur_help">
@@ -183,21 +183,21 @@
 				    <form action="2.php" method="post">
 						<?php
 							if($opened == 1){ ?>								
-							<span id="zer">Все слова открыты</span>
+							<span id="zer">Р’СЃРµ СЃР»РѕРІР° РѕС‚РєСЂС‹С‚С‹</span>
 					   <?php }
 							else{?>
-							<input name="open" type="submit" value="Открыть все слова">
+							<input name="open" type="submit" value=В«РћС‚РєСЂС‹С‚СЊ РІСЃРµ СЃР»РѕРІР°">
 						 	<?php 
 						 	}
 						 	?>
-						<input name="end" type="submit" value="Закончить тур">
+						<input name="end" type="submit" value=В«Р—Р°РєРѕРЅС‡РёС‚СЊ С‚СѓСЂ">
 					</form>
 				</div>
 			</div>            
 			</div>            
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
