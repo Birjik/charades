@@ -96,7 +96,7 @@
 </script>
 <html>
 	<head>
-		<title>Крокодил</title>
+		<title>В РљСЂРѕРєРѕРґРёР»</title>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
@@ -105,17 +105,17 @@
 			<div id="header">
 			    <h1>
     				<a href="#add_word">                               			    
-				    	Крокодил
+				    	В РљСЂРѕРєРѕРґРёР»
     				</a>
 			    </h1>
 			</div>
 			<div id="content">
 				<div id="finish">
 				<span id="str">
-				Автор: <?php echo $author;?>
+				РђРІС‚РѕСЂ: <?php echo $author;?>
 				</span>
 		        </div>
-				<span id="str">Тур 2 (Игра №<?php echo $id;?>)</span>
+				<span id="str">РўСѓСЂ 2 (РРіСЂР°  #<?php echo $id;?>)</span>
 		    	<hr>
 		    	<div id="center">
 					<span style="color:green; font-size:175%"><?php echo $name;?></span>
@@ -151,21 +151,21 @@
 					</div>
 					<div id="add_word">
 						<form action="word.php?pf=<?php echo $x.$b/10;?>" method="post">
-							<input name="ok" type="submit" value="Правильно">
+							<input name="ok" type="submit" value=В«РџСЂР°РІРёР»СЊРЅРѕ">
 						</form>
 					</div>
 					<div id="time2"> 
-						Осталось<br>
+						РћСЃС‚Р°Р»РѕСЃСЊ<br>
 						<span id="timer">
 							0.0
 						</span><br>
-						секунд
+						СЃРµРєСѓРЅРґ
 					</div>
 			</div>
 			</div>
 		</div>
 		<div id="footer">
-			&copy; Ауганов Биржан 2014
+			&copy; РђСѓРіР°РЅРѕРІ Р‘РёСЂР¶Р°РЅ 2014
 		</div>
 	</body>
 </html>
